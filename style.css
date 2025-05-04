@@ -1,0 +1,89 @@
+/* APLICA A TODAS AS PAGINAS */
+body{
+    font-family: Arial, sans-serif;
+    background-color: #b22222;
+    margin: 0;
+    padding: 0;
+}
+  
+header{
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+header img{
+    width: 10em;
+}
+
+.containerHeader{
+    display: flex;
+    align-items: center;
+}
+
+.titulo{
+    width: 82%;
+    align-items: center;
+    font-size: 22px;
+}
+  
+nav{
+    background-color: #333;
+    padding: 0.5em;
+    text-align: center;
+}
+  
+nav a{
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+}
+  
+nav a:hover{
+    text-decoration: underline;
+}
+  
+main{
+    padding: 2em;
+    text-align: center;
+    background-color: white;
+}
+
+/* index.html */
+#cabeca{
+    margin-bottom: 0;
+}
+
+header p{
+    margin-top: 0%;
+    font-size: x-small;
+    font-style: italic;
+}
+
+/* contato.html */
+.imgContatos{
+    align-items: center;
+    width: 100%;
+}
+
+.redes{
+    width: 5em;
+    margin: 1.5em;
+    border: 2px solid;
+    border-radius: 20%;
+    padding: 1em;
+    background-color: #e4e4e4;
+}
+
+.imgContatos a{
+    text-decoration: none;
+}
+
+.imgContatos img:hover{
+    transform: scale(1.05);
+    transition: transform .1s;
+}
+
+#zap{
+    border-color: rgb(42, 161, 38);
+}
