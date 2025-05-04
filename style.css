@@ -1,4 +1,8 @@
 /* APLICA A TODAS AS PAGINAS */
+* {
+    box-sizing: border-box;
+}
+
 body{
     font-family: Arial, sans-serif;
     background-color: #b22222;
@@ -18,12 +22,10 @@ header img{
 
 .containerHeader{
     display: flex;
-    align-items: center;
 }
 
 .titulo{
     width: 82%;
-    align-items: center;
     font-size: 22px;
 }
   
@@ -45,8 +47,13 @@ nav a:hover{
   
 main{
     padding: 2em;
-    text-align: center;
     background-color: white;
+    text-align: center;
+    font-size: large;
+}
+
+footer{
+    text-align: center;
 }
 
 /* index.html */
@@ -56,8 +63,97 @@ main{
 
 header p{
     margin-top: 0%;
-    font-size: x-small;
+    font-size: small;
     font-style: italic;
+}
+
+.descPrincipal{
+    width: 100%;
+    font-size: larger;
+}
+
+.imgsInicio{
+    width: 100%;
+    align-items: center;
+}
+
+.imgComida{
+    width: 20em;
+    margin: 15px;
+    border: 3px solid black;
+    border-radius: 50%;
+    outline: 2px solid red;
+    min-height: 260px;
+    box-shadow: 0 0 20px black;
+}
+
+.detalhes{
+    padding: 2em;
+    width: 100%;
+    text-align: center;
+}
+
+.pedido{
+    font-size: xx-large;
+    border: 2px solid;
+    padding: 16px;
+    margin-bottom: 2em;
+    margin-top: 1em;
+    transition: .3s;
+    box-shadow: 0 0 5px black;
+}
+
+.pedido:hover{
+    transform: scale(1.1);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.equipe{
+    font-size: x-large;
+    margin-bottom: 5px;
+}
+
+.containerFunc{
+    display: flex;
+    align-items: center;
+}
+
+.chefs{
+    width: 33%;
+}
+
+.containerFunc ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.containerFunc li{
+    padding-bottom: 16px;
+}
+
+.garcons{
+    width: 33%;
+}
+
+.balcao{
+    width: 33%;
+}
+
+/* cardapio.html */
+.containerImgsCardapio{
+    display: flex;
+    align-items: center;
+}
+
+.imgsCardapio{
+    width: 100%;
+    text-align: center;
+}
+
+.imgsCardapio figcaption{
+    font-size: larger;
+    margin-bottom: 0.2em;
 }
 
 /* contato.html */
@@ -67,10 +163,10 @@ header p{
 }
 
 .redes{
-    width: 5em;
+    width: 6em;
     margin: 1.5em;
     border: 2px solid;
-    border-radius: 20%;
+    border-radius: 30%;
     padding: 1em;
     background-color: #e4e4e4;
 }
@@ -79,11 +175,19 @@ header p{
     text-decoration: none;
 }
 
+.imgContatos img{
+    transition: .1s;
+}
+
 .imgContatos img:hover{
     transform: scale(1.05);
-    transition: transform .1s;
+    transition: .1s;
 }
 
 #zap{
     border-color: rgb(42, 161, 38);
+}
+
+#tt{
+    border-color: rgb(0, 153, 255);
 }
