@@ -271,7 +271,7 @@ header p{
 
 .equipe{
     margin-top: 3vw;
-    font-size: x-large;
+    font-size: 2vw;
     margin-bottom: 1vw;
     text-align: center;
 }
@@ -284,6 +284,7 @@ header p{
 
 .func{
     width: 33%;
+    font-size: 1vw;
 }
 
 .containerFunc ul{
