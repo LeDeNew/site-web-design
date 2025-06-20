@@ -5,28 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PEIXE</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="peixe.png" type="image/png">
+  <link rel="shortcut icon" href="imgs/peixe.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rambla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <header>
     <div class="containerHeader">
-      <div class="imagemPeixe">
-        <img src="peixe.png" alt="peixe">
-      </div>
+      <img src="imgs/peixe.png" alt="peixe">
       <div class="titulo">
         <h1 id="cabeca">Peixe House</h1>
         <p>desde 2020</p>
       </div>
-      <div class="imagemPeixe">
-        <img src="peixe.png" alt="peixe">
-      </div>
+      <img src="imgs/peixe.png" alt="peixe" class="hideMobile">
     </div>
   </header>
 
   <nav>
     <a href="#cabeca">Início</a>
+    <hr class="linhaNav">
     <a href="cardapio.html">Cardápio</a>
+    <hr class="linhaNav">
     <a href="contato.html">Contato</a>
   </nav>
 
@@ -36,10 +37,10 @@
       <p>Aqui você encontra o melhor da culinária japonesa com os melhores do Brasil.</p>
     </div>
 
-    <div class="ImgsInicio">
-        <img src="sushi.webp" alt="sushi" class="imgComida">
-        <img src="ceviche.jpg" alt="ceviche" class="imgComida">
-        <img src="yakisoba.jpg" alt="ceviche" class="imgComida">
+    <div class="imgsInicio">
+        <img src="imgs/sushi.webp" alt="sushi" class="imgComida">
+        <img src="imgs/ceviche.jpg" alt="ceviche" class="imgComida">
+        <img src="imgs/yakisoba.jpg" alt="ceviche" class="imgComida">
     </div>
 
     <div class="detalhes">
@@ -47,7 +48,7 @@
       <p>Todos os nossos pratos são avaliados por especialistas, visando qualidade e segurança em todo o seu preparo.</p>
     </div>
 
-    <div>
+    <div class="ctbutton">
       <a href="pedido.html"><button class="pedido">Fazer Pedido</button></a>
     </div>
 
@@ -55,14 +56,14 @@
       <h2>Nossa equipe atual:</h2>
     </div>
     <div class="containerFunc">
-      <div class="chefs">
+      <div class="func">
         <h3>Chefs:</h3>
         <ul>
           <li>Wendel Rocha</li>
           <li>Maicon Hagora</li>
         </ul>
       </div>
-      <div class="garcons">
+      <div class="func">
         <h3>Garçons:</h3>
         <ul>
           <li>Goto Godoy</li>
@@ -70,7 +71,7 @@
           <li>Maria Rita</li>
         </ul>
       </div>
-      <div class="balcao">
+      <div class="func">
         <h3>Balconistas:</h3>
         <ul>
           <li>Carlos Emanuel</li>
@@ -80,7 +81,7 @@
     </div>
   </main>
 
-  <nav>
+  <nav class="hideMobile">
     <a href="#cabeca">Início</a>
     <a href="cardapio.html">Cardápio</a>
     <a href="contato.html">Contato</a>

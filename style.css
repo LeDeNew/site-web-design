@@ -3,53 +3,201 @@
     box-sizing: border-box;
 }
 
+@media (max-width: 768px){
+
+    .containerHeader{
+        justify-content:space-around !important;
+    }
+
+    .titulo{
+        font-size: 4vw !important;
+        text-align: end !important;
+        justify-self: start !important;
+    }
+
+    header p{
+        padding-right: 1vw;
+        font-size: 3.3vw !important;
+    }
+
+    .hideMobile{
+        display: none;
+    }
+
+    header img{
+        width: 30% !important;
+        padding-left: 2vw;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    nav a{
+        font-size: 5.5vw !important;
+        padding-top: 1vw !important;
+        padding-bottom: 1vw !important;
+    }
+
+    .linhaNav{
+        display: block !important;
+        width: 100%;
+        border-width: 0.1px;
+        border-color: #332928;
+        margin: 0;
+    }
+
+    .descPrincipal{
+        font-size: 4vw !important;
+    }
+
+    .imgsInicio{
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .imgComida{
+        width: 50vw !important;
+    }
+
+    .detalhes{
+        font-size: 4vw !important;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .pedido{
+        font-size: 10vw !important;
+        padding: 3vw !important;
+        box-shadow: 0 0 3vw black !important;
+        border: .8vw solid #332928 !important;
+    }
+
+    .equipe{
+        font-size: 5vw !important;
+    }
+
+    .containerFunc{
+        flex-direction: column;
+    }
+
+    .func{
+        width: 100% !important;
+    }
+
+    .imgContatos{
+        align-items: center;
+    }
+
+    .redes{
+        width: 24vw !important;
+        margin: 6vw !important;
+        border: .8vw solid !important;
+        border-radius: 30% !important;
+        padding: 4vw !important;
+    }
+
+    footer{
+        font-size: 4vw !important;
+    }
+
+    .textContatos{
+        font-size: 5vw !important;
+    }
+
+    .containerImgsCardapio{
+        flex-wrap: wrap;
+        justify-content: space-evenly !important;
+    }
+
+    .imgsCardapio img{
+        width: 60vw !important;
+        height: 40vw !important;
+        margin: 3vw !important;
+        border: .6vw solid black !important;
+        border-radius: 50%;
+        outline: .45vw solid #AD291F !important;
+        box-shadow: 0 0 4vw black !important;
+    }
+
+    .imgsCardapio figcaption{
+        font-size: 5.6vw !important;
+        margin-bottom: 0.8vw !important;
+    }
+
+    .cabecaCardapio{
+        font-size: 3vw !important;
+    }
+}
+
+:root {
+    color-scheme: light dark;
+
+    --light-bg: #AD291F;
+    --light-color: black;
+    --light-main: ghostwhite;
+
+    --dark-bg: #82332E;
+    --dark-color: white;
+    --dark-main: #332C2B;
+}
+
 body{
-    font-family: Arial, sans-serif;
-    background-color: #b22222;
+    background-color: light-dark(var(--light-bg), var(--dark-bg));
     margin: 0;
     padding: 0;
 }
   
 header{
     color: white;
-    padding: 1em;
-    text-align: center;
+    padding: 0;
 }
 
 header img{
-    width: 10em;
+    width: 10%;
 }
 
 .containerHeader{
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .titulo{
-    width: 100%;
-    font-size: 22px;
+    font-size: 1.5vw;
+    font-family: "Lobster";
+    text-align: center;
 }
   
 nav{
-    background-color: #333;
-    padding: 0.5em;
-    text-align: center;
+    background-color: #332423;
+    display: flex;
+    justify-content: center;
 }
   
 nav a{
     color: white;
-    margin: 15px;
+    font-family: "Rambla";
+    margin: 0.75vw;
     text-decoration: none;
+    font-size: 1vw;
 }
   
 nav a:hover{
     text-decoration: underline;
 }
+
+.linhaNav{
+    display: none;
+}
   
 main{
     padding: 2em;
-    background-color: white;
-    text-align: center;
-    font-size: large;
+    background-color: light-dark(var(--light-main), var(--dark-main));
+    font-family: "Noto Sans", sans-serif;
 }
 
 footer{
@@ -63,44 +211,54 @@ footer{
 
 header p{
     margin-top: 0%;
-    font-size: small;
+    font-size: 1vw;
     font-style: italic;
 }
 
 .descPrincipal{
     width: 100%;
-    font-size: larger;
+    font-size: 1.5vw;
+    text-align: center;
 }
 
 .imgsInicio{
+    display: flex;
     width: 100%;
-    align-items: center;
+    justify-content: space-evenly;
 }
 
-.imgComida{
-    width: 20em;
-    margin: 15px;
-    border: 3px solid black;
+.imgsInicio img{
+    width: 20vw;
+    margin: 1vw;
+    border: .2vw solid black;
     border-radius: 50%;
-    outline: 2px solid red;
-    min-height: 260px;
-    box-shadow: 0 0 20px black;
+    outline: .15vw solid #AD291F;
+    min-height: 14.5vw;
+    box-shadow: 0 0 2vw black;
 }
 
 .detalhes{
     padding: 2em;
+    font-size: 1.1vw;
     width: 100%;
     text-align: center;
 }
 
+.ctbutton{
+    text-align: center;
+}
+
 .pedido{
-    font-size: xx-large;
-    border: 2px solid;
-    padding: 16px;
-    margin-bottom: 2em;
-    margin-top: 1em;
+    font-size: 1.5vw;
+    border: .2vw solid #332928;
+    padding: 1vw;
+    margin-bottom: .2vw;
+    margin-top: .2vw;
     transition: .3s;
-    box-shadow: 0 0 5px black;
+    box-shadow: 0 0 .6vw black;
+    background-color: #ffc13b;
+    font-family: "Rambla";
+    color: black;
 }
 
 .pedido:hover{
@@ -110,16 +268,19 @@ header p{
 }
 
 .equipe{
+    margin-top: 3vw;
     font-size: x-large;
-    margin-bottom: 5px;
+    margin-bottom: 1vw;
+    text-align: center;
 }
 
 .containerFunc{
     display: flex;
-    align-items: center;
+    align-items: start;
+    text-align: center;
 }
 
-.chefs{
+.func{
     width: 33%;
 }
 
@@ -128,19 +289,16 @@ header p{
     padding: 0;
 }
 
-.containerFunc li{
-    padding-bottom: 16px;
-}
-
-.garcons{
-    width: 33%;
-}
-
-.balcao{
-    width: 33%;
+.func li{
+    padding-bottom: 1vw;
 }
 
 /* cardapio.html */
+.cabecaCardapio{
+    text-align: center;
+    font-size: 1vw;
+}
+
 .containerImgsCardapio{
     display: flex;
     align-items: center;
@@ -148,26 +306,40 @@ header p{
 
 .imgsCardapio{
     width: 100%;
-    text-align: center;
+    justify-items: center;
+}
+
+.imgsCardapio img{
+    width: 20vw;
+    height: 10vw;
+    margin: 1vw;
+    border: .2vw solid #AD291F;
+    border-radius: 50%;
+    outline: .15vw solid black;
+    min-height: 14.5vw;
+    box-shadow: 0 0 2vw black;
 }
 
 .imgsCardapio figcaption{
-    font-size: larger;
-    margin-bottom: 0.2em;
+    justify-self: center;
+    font-size: 1.4vw;
+    margin-bottom: 0.2vw;
 }
 
 /* contato.html */
+
 .imgContatos{
-    align-items: center;
+    display: flex;
+    justify-content: center;
     width: 100%;
 }
 
 .redes{
-    width: 6em;
-    margin: 1.5em;
-    border: 2px solid;
+    width: 6vw;
+    margin: 1.5vw;
+    border: .2vw solid;
     border-radius: 30%;
-    padding: 1em;
+    padding: 1vw;
     background-color: #e4e4e4;
 }
 
@@ -185,13 +357,24 @@ header p{
 }
 
 #zap{
-    border-color: rgb(42, 161, 38);
+    border-color: rgb(42, 161, 38) !important;
 }
 
 #tt{
-    border-color: rgb(0, 153, 255);
+    border-color: rgb(0, 153, 255) !important;
 }
 
 #insta{
-    border-color: darkmagenta;
+    border-color: darkmagenta !important;
+}
+
+.textContatos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1vw;
+}
+
+footer{
+    font-size: 1vw;
 }

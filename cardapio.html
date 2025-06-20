@@ -5,27 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cardápio - PEIXE</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="peixe.png">
+  <link rel="shortcut icon" href="imgs/peixe.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rambla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <header>
     <div class="containerHeader">
-      <div class="imagemPeixe">
-        <img src="peixe.png" alt="peixe">
-      </div>
+      <img src="imgs/peixe.png" alt="peixe">
       <div class="titulo">
         <h1 id="cabeca2">Cardápio Peixástico</h1>
       </div>
-      <div class="imagemPeixe">
-        <img src="peixe.png" alt="peixe">
-      </div>
+      <img src="imgs/peixe.png" alt="peixe" class="hideMobile">
     </div>
   </header>
 
   <nav>
     <a href="index.html">Início</a>
+    <hr class="linhaNav">
     <a href="#cabeca2">Cardápio</a>
+    <hr class="linhaNav">
     <a href="contato.html">Contato</a>
   </nav>
 
@@ -37,7 +38,7 @@
     <div class="containerImgsCardapio">
       <div class="imgsCardapio">
         <figure>
-          <img src="hotroll.jpg" alt="Hot Roll" class="imgComida">
+          <img src="imgs/hotroll.jpg" alt="Hot Roll" class="imgComida">
           <figcaption>Hot Roll (Unidade)</figcaption>
           <figcaption>R$2,99</figcaption>
         </figure>
@@ -45,7 +46,7 @@
 
       <div class="imgsCardapio">
         <figure>
-          <img src="temaki.webp" alt="Temaki" class="imgComida">
+          <img src="imgs/temaki.webp" alt="Temaki" class="imgComida">
           <figcaption>Temaki</figcaption>
           <figcaption>R$31,99</figcaption>
         </figure>
@@ -53,7 +54,7 @@
 
       <div class="imgsCardapio">
         <figure>
-          <img src="gohan.avif" alt="Gohan" class="imgComida">
+          <img src="imgs/gohan.avif" alt="Gohan" class="imgComida">
           <figcaption>Gohan (Arroz Japonês)</figcaption>
           <figcaption>R$11,99</figcaption>
         </figure>
@@ -63,7 +64,7 @@
     <div class="containerImgsCardapio">
       <div class="imgsCardapio">
         <figure>
-          <img src="sushi.webp" alt="sushi" class="imgComida">
+          <img src="imgs/sushi.webp" alt="sushi" class="imgComida">
           <figcaption>Sushi (Unidade)</figcaption>
           <figcaption>R$3,99</figcaption>
         </figure>
@@ -71,7 +72,7 @@
 
       <div class="imgsCardapio">
         <figure>
-          <img src="ceviche.jpg" alt="ceviche" class="imgComida">
+          <img src="imgs/ceviche.jpg" alt="ceviche" class="imgComida">
           <figcaption>Ceviche</figcaption>
           <figcaption>R$29,99</figcaption>
         </figure>
@@ -79,7 +80,7 @@
 
       <div class="imgsCardapio">
         <figure>
-          <img src="yakisoba.jpg" alt="ceviche" class="imgComida">
+          <img src="imgs/yakisoba.jpg" alt="ceviche" class="imgComida">
           <figcaption>Yakisoba</figcaption>
           <figcaption>R$39,99</figcaption>
         </figure>
@@ -89,7 +90,7 @@
     <div class="containerImgsCardapio">
       <div class="imgsCardapio">
         <figure>
-          <img src="rodizio.avif" alt="Rodizio" class="imgComida">
+          <img src="imgs/rodizio.avif" alt="Rodizio" class="imgComida">
           <figcaption>Rodízio (Bebida Livre)</figcaption>
           <figcaption>R$159,99</figcaption>
         </figure>
@@ -97,7 +98,7 @@
 
       <div class="imgsCardapio">
         <figure>
-          <img src="miniBarca.jpg" alt="Mini Barca" class="imgComida">
+          <img src="imgs/miniBarca.jpg" alt="Mini Barca" class="imgComida">
           <figcaption>Mini Barca</figcaption>
           <figcaption>R$24,99</figcaption>
         </figure>
@@ -105,7 +106,7 @@
 
       <div class="imgsCardapio">
         <figure>
-          <img src="barca.jpg" alt="Barca Completa" class="imgComida">
+          <img src="imgs/barca.jpg" alt="Barca Completa" class="imgComida">
           <figcaption>Barca Completa</figcaption>
           <figcaption>R$109,99</figcaption>
         </figure>
@@ -113,7 +114,7 @@
     </div>
   </main>
 
-  <nav>
+  <nav class="hideMobile">
     <a href="index.html">Início</a>
     <a href="#cabeca2">Cardápio</a>
     <a href="contato.html">Contato</a>
