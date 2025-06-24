@@ -140,10 +140,10 @@
 
     --light-bg: #AD291F;
     --light-color: black;
-    --light-main: ghostwhite;
+    --light-main: #fefff8;
 
     --dark-bg: #82332E;
-    --dark-color: white;
+    --dark-color: #fefff8;
     --dark-main: #332C2B;
 }
 
@@ -154,7 +154,7 @@ body{
 }
   
 header{
-    color: white;
+    color: #fefff8;
     padding: 0;
 }
 
@@ -182,7 +182,7 @@ nav{
 }
   
 nav a{
-    color: white;
+    color: #fefff8;
     font-family: "Rambla";
     margin: 0.75vw;
     text-decoration: none;
