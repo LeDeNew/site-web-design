@@ -1,3 +1,0 @@
-Titulo: Lobster
-Nav: Rambla
-Texto: Noto Sans
