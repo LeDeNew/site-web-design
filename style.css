@@ -154,7 +154,7 @@ body{
 }
   
 header{
-    color: #fefff8;
+    color: var(--light-main);
     padding: 0;
 }
 
@@ -182,7 +182,7 @@ nav{
 }
   
 nav a{
-    color: #fefff8;
+    color: var(--light-main);
     font-family: "Rambla";
     margin: 0.75vw;
     text-decoration: none;
@@ -201,6 +201,7 @@ main{
     padding: 2em;
     background-color: light-dark(var(--light-main), var(--dark-main));
     font-family: "Noto Sans", sans-serif;
+    color: light-dark(var(--dark-main),var(--light-main));
 }
 
 footer{
